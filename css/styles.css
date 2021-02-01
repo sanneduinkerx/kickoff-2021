@@ -1,6 +1,6 @@
 :root {
   --primary:#FFF;
-  --secondary:#000;
+  --secondary:white;
 }
 
 * {
@@ -11,4 +11,25 @@
 html {
   background: var(--secondary);
   color: var(--primary);
+}
+
+div {
+  width: 20em;
+  height: 26em;
+  padding: 1em;
+  background-color:green;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+img{
+  width: 15em;
+  height: 12em;
+  border-radius: 20px;
 }
