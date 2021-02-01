@@ -7,7 +7,9 @@ var teams = fetch(url)
 
 // PUT REQUEST
 ///...
-// elementen renderen
+
+
+// api in element
 
 document.body.onload = inladen;
 
@@ -17,12 +19,12 @@ function inladen () {
   var Img = document.createElement("img");
 
   // and give it some content
-  var newContent = document.createTextNode(" name");
+//   var newContent = document.createTextNode(" name");
   var div = document.querySelector('div');
 
   // add the text node to the newly created div
-  div.appendChild(Paragraaf);
-  Paragraaf.appendChild(newContent);
+//   div.appendChild(Paragraaf);
+//   Paragraaf.appendChild(newContent);
 }
 
 //src: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement

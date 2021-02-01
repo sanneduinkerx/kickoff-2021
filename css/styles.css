@@ -1,6 +1,6 @@
 :root {
   --primary:#FFF;
-  --secondary:white;
+  --secondary:rgb(191, 231, 191);
 }
 
 * {
@@ -24,12 +24,25 @@ div {
   align-items: center;
 }
 
+/* https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+.middle { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 p {
   font-family: 'Roboto Mono', monospace;
 }
 
 img{
-  width: 15em;
+  width: 12em;
   height: 12em;
-  border-radius: 20px;
+  border-radius: 50%;
+}
+
+a{
+  color: white;
 }
