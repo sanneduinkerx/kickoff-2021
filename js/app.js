@@ -1,6 +1,17 @@
-var xhr = new XMLHttpRequest()
-var url = 'https://600ff44f6c21e1001704fac2.mockapi.io/minor-web/api/squads/1/teams/1/members'
+// data in api zetten
+var xhr = new XMLHttpRequest();
+var url = 'https://600ff44f6c21e1001704fac2.mockapi.io/minor-web/api/squads/1/teams/1/members/48';
 
+// var url = 'https://600ff44f6c21e1001704fac2.mockapi.io/minor-web/api/'
+
+// GET REQUEST : dmv fetch
+// const teams = fetch(url)
+//                 .then(response => response.json())
+//                 .then(data => console.log('fetch', data));
+
+// PUT request
+
+//aanpassen van de api:
 const userData = {
     "teamId": "1",
     "name": "Sanne",
@@ -15,11 +26,13 @@ const userData = {
     "pet": "kippen",
     "muziek": "Lo-fi, acoustic",
     "werkplek": "Thuis"
-    }
-}
-xhr.open("POST", url, true)
-xhr.setRequestHeader('Content-Type', 'application/json')
-xhr.send(JSON.stringify(userData))
+    },
+    "url": "https://sanneduinkerx.github.io/kickoff-2021/index.html"
+};
+
+// xhr.open("PUT", url, true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
+// xhr.send(JSON.stringify(userData));
 
 // api in element
 
